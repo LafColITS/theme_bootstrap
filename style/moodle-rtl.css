@@ -110,7 +110,6 @@ figure {
 
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -171,8 +170,6 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -234,7 +231,6 @@ th {
   *:after {
     background: transparent !important;
     color: #000 !important;
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -1712,7 +1708,6 @@ kbd {
   color: #ffffff;
   background-color: #333333;
   border-radius: 3px;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -1720,7 +1715,6 @@ kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: bold;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -3088,7 +3082,7 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -3553,7 +3547,6 @@ select[multiple].form-group-lg .form-control {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -4017,13 +4010,10 @@ tbody.collapse.in {
   height: 0;
   overflow: hidden;
   -webkit-transition-property: height, visibility;
-  -o-transition-property: height, visibility;
   transition-property: height, visibility;
   -webkit-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
   transition-duration: 0.35s;
   -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 
@@ -4065,7 +4055,6 @@ tbody.collapse.in {
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
 
@@ -4905,7 +4894,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 15px;
   padding-right: 15px;
   border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
@@ -4918,7 +4906,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-collapse {
     width: auto;
     border-top: 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
@@ -5085,7 +5072,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-top: 0;
     background-color: transparent;
     border: 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
@@ -6020,16 +6006,6 @@ a.thumbnail.active {
   }
 }
 
-@-o-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-
-  to {
-    background-position: 0 0;
-  }
-}
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -6071,7 +6047,6 @@ a.thumbnail.active {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 40px 40px;
   background-size: 40px 40px;
 }
 
@@ -6888,6 +6863,7 @@ button.close {
   -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
@@ -6918,7 +6894,6 @@ button.close {
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0;
 }
@@ -7144,7 +7119,6 @@ button.close {
   line-height: 1.42857143;
   text-align: right;
   background-color: #ffffff;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -7295,27 +7269,19 @@ button.close {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
     perspective: 1000;
   }
 
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     right: 0;
   }
 
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     right: 0;
   }
@@ -7323,8 +7289,6 @@ button.close {
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     right: 0;
   }
@@ -7385,7 +7349,6 @@ button.close {
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -7396,7 +7359,6 @@ button.close {
   left: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -7931,6 +7893,8 @@ button.close {
   right: 100%;
   margin-top: -6px;
   margin-right: -1px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
 }
 
@@ -7963,6 +7927,8 @@ button.close {
 .dropdown-submenu.pull-left > .dropdown-menu {
   right: -100%;
   margin-right: 10px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
   border-radius: 0 6px 6px 6px;
 }
 
@@ -8602,7 +8568,7 @@ a.autolink.glossary:hover {
 
 .collapsible-actions .collapseexpand {
   padding-right: 20px;
-  background-image: url([[pix:t/collapsed_rtl]]);
+  background-image: url([[pix:t/collapsed]]);
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -9145,7 +9111,7 @@ a.skip:active {
 }
 
 .smartselect .smartselect_submenuitem {
-  background-image: url([[pix:t/collapsed_rtl]]);
+  background-image: url([[pix:t/collapsed]]);
   background-repeat: no-repeat;
   background-position: 0%;
 }
@@ -9369,7 +9335,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .moodle-dialogue-base .moodle-dialogue-fullscreen .closebutton {
   width: 28px;
   height: 16px;
-  -webkit-background-size: 100% 100%;
   background-size: 100%;
 }
 
@@ -9388,7 +9353,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
-  -webkit-box-shadow: -5px 5px 20px 0 #666;
   box-shadow: -5px 5px 20px 0 #666;
 }
 
@@ -9407,11 +9371,9 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   background: #ccc;
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   background-image: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=0);
-  -webkit-filter: 0;
   filter: 0;
 }
 
@@ -9649,7 +9611,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   overflow-x: hidden;
   overflow-y: auto;
   max-width: 20.3em;
-  -webkit-box-shadow: inset 0 0 30px 0px #ccc;
   box-shadow: inset 0 0 30px 0px #ccc;
 }
 
@@ -9735,7 +9696,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 
 .choosercontainer #chooseform .selected {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0 10px 0 #ccc;
   box-shadow: 0px 0 10px 0 #ccc;
 }
 
@@ -9898,7 +9858,6 @@ body.jsenabled .formlisting {
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: block;
   text-align: right;
@@ -10380,7 +10339,7 @@ img.iconsmall {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   margin-bottom: 0.3em;
@@ -11512,7 +11471,6 @@ span.editinstructions {
   color: #31708f;
   text-decoration: none;
   z-index: 9999;
-  -webkit-box-shadow: -2px 2px 5px 1px #ccc;
   box-shadow: -2px 2px 5px 1px #ccc;
   border: 1px solid #bce8f1;
 }
@@ -11530,7 +11488,6 @@ span.editinstructions {
   right: 50%;
   width: 30em;
   margin-right: -15em;
-  -webkit-box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -11765,7 +11722,7 @@ span.editinstructions {
 }
 
 .course_category_tree .category > .info > .categoryname {
-  background-image: url([[pix:t/collapsed_empty_rtl]]);
+  background-image: url([[pix:t/collapsed_empty]]);
   background-repeat: no-repeat;
   padding: 2px 18px;
   margin: 3px;
@@ -11797,7 +11754,7 @@ span.editinstructions {
 }
 
 .course_category_tree .category.with_children.collapsed > .info > .categoryname {
-  background-image: url([[pix:t/collapsed_rtl]]);
+  background-image: url([[pix:t/collapsed]]);
 }
 
 .course_category_tree .category.collapsed > .content {
@@ -12429,7 +12386,6 @@ span.editinstructions {
   border-radius: 8px;
   border: 1px solid #fff;
   display: inline-block;
-  -webkit-box-shadow: -5px 5px 20px 0 #666;
   box-shadow: -5px 5px 20px 0 #666;
 }
 
@@ -12442,11 +12398,9 @@ span.editinstructions {
   color: #333;
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px #fff;
-  -webkit-filter: dropshadow(color=#ffffff, offx=1, offy=1);
   filter: dropshadow(color=#ffffff, offx=1, offy=1);
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   background-image: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=0);
@@ -12459,7 +12413,6 @@ span.editinstructions {
   margin: 10px;
   border-radius: 10px;
   display: inline-block;
-  -webkit-box-shadow: -2px 2px 3px .1px #999;
   box-shadow: -2px 2px 3px .1px #999;
 }
 
@@ -12601,8 +12554,6 @@ span.editinstructions {
   border: 1px solid #ccc;
   border-bottom: 1px solid #b3b3b3;
   border-radius: 4px;
-  -webkit-box-sizing: unset;
-  -moz-box-sizing: unset;
   box-sizing: unset;
   background: white;
 }
@@ -12621,16 +12572,12 @@ span.editinstructions {
 
 .fp-viewbar a.checked:hover,
 .fp-viewbar a:hover {
-  background-image: -webkit-radial-gradient(center, ellipse, #ffffff 60%, #dfdfdf 100%);
-  background-image: -o-radial-gradient(center, ellipse, #ffffff 60%, #dfdfdf 100%);
   background-image: radial-gradient(ellipse at center, #ffffff 60%, #dfdfdf 100%);
   background-color: #ebebeb;
 }
 
 .fp-viewbar a.checked,
 .fp-viewbar a:active {
-  background-image: -webkit-radial-gradient(center, ellipse, #ffffff 40%, #dfdfdf 100%);
-  background-image: -o-radial-gradient(center, ellipse, #ffffff 40%, #dfdfdf 100%);
   background-image: radial-gradient(ellipse at center, #ffffff 40%, #dfdfdf 100%);
   background-color: #dfdfdf;
 }
@@ -12668,7 +12615,7 @@ span.editinstructions {
 }
 
 .fp-pathbar .fp-path-folder {
-  background: url('[[pix:theme|fp/path_folder_rtl]]') no-repeat 0 0;
+  background: url('[[pix:theme|fp/path_folder]]') no-repeat 0 0;
   width: 27px;
   height: 12px;
   margin-right: 4px;
@@ -12699,14 +12646,12 @@ span.editinstructions {
   border: 1px solid #ddd;
   padding: 3px;
   vertical-align: middle;
-  -webkit-box-shadow: -1px 1px 2px 0 #ccc;
   box-shadow: -1px 1px 2px 0 #ccc;
 }
 
 .fp-iconview .fp-thumbnail:hover {
   background: #fff;
   border: 1px solid #ddd;
-  -webkit-box-shadow: inset 0 0 10px 0px #ccc;
   box-shadow: inset 0 0 10px 0px #ccc;
 }
 
@@ -12753,7 +12698,7 @@ span.editinstructions {
 
 .file-picker .ygtvtn,
 .filemanager .ygtvtn {
-  background: url('[[pix:y/tn_rtl]]') 0 0 no-repeat;
+  background: url('[[pix:y/tn]]') 0 0 no-repeat;
   width: 17px;
   height: 22px;
 }
@@ -12776,7 +12721,7 @@ span.editinstructions {
 
 .file-picker .ygtvtp,
 .filemanager .ygtvtp {
-  background-image: url('[[pix:y/tp_rtl]]') 0 10px no-repeat;
+  background-image: url('[[pix:y/tp]]') 0 10px no-repeat;
   width: 13px;
   height: 12px;
   cursor: pointer;
@@ -12784,7 +12729,7 @@ span.editinstructions {
 
 .file-picker .ygtvtph,
 .filemanager .ygtvtph {
-  background-image: url('[[pix:y/tp_rtl]]') 0 10px no-repeat;
+  background-image: url('[[pix:y/tp]]') 0 10px no-repeat;
   width: 13px;
   height: 22px;
   cursor: pointer;
@@ -12792,7 +12737,7 @@ span.editinstructions {
 
 .file-picker .ygtvln,
 .filemanager .ygtvln {
-  background-image: url('[[pix:y/ln_rtl]]') 0 0 no-repeat;
+  background-image: url('[[pix:y/ln]]') 0 0 no-repeat;
   width: 17px;
   height: 22px;
 }
@@ -12815,7 +12760,7 @@ span.editinstructions {
 
 .file-picker .ygtvlp,
 .filemanager .ygtvlp {
-  background-image: url('[[pix:y/lp_rtl]]') 0 0 no-repeat;
+  background-image: url('[[pix:y/lp]]') 0 0 no-repeat;
   width: 13px;
   height: 12px;
   cursor: pointer;
@@ -12823,7 +12768,7 @@ span.editinstructions {
 
 .file-picker .ygtvlph,
 .filemanager .ygtvlph {
-  background-image: url('[[pix:y/lp_rtl]]') 0 10px no-repeat;
+  background-image: url('[[pix:y/lp]]') 0 10px no-repeat;
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 13px;
@@ -13051,7 +12996,6 @@ a.ygtvspacer:hover {
   margin: 10px 0 0 20px;
   background: #fff;
   border: 1px solid #ddd;
-  -webkit-box-shadow: inset 0 0 10px 0 #ccc;
   box-shadow: inset 0 0 10px 0 #ccc;
 }
 
@@ -13176,15 +13120,11 @@ a.ygtvspacer:hover {
 }
 
 .fp-toolbar a:hover {
-  background-image: -webkit-radial-gradient(center, ellipse, #ffffff 60%, #dfdfdf 100%);
-  background-image: -o-radial-gradient(center, ellipse, #ffffff 60%, #dfdfdf 100%);
   background-image: radial-gradient(ellipse at center, #ffffff 60%, #dfdfdf 100%);
   background-color: #ebebeb;
 }
 
 .fp-toolbar a:active {
-  background-image: -webkit-radial-gradient(center, ellipse, #ffffff 40%, #dfdfdf 100%);
-  background-image: -o-radial-gradient(center, ellipse, #ffffff 40%, #dfdfdf 100%);
   background-image: radial-gradient(ellipse at center, #ffffff 40%, #dfdfdf 100%);
   background-color: #dfdfdf;
 }
@@ -13371,7 +13311,6 @@ a.ygtvspacer:hover {
   border: 2px dashed #fb7979;
   padding-top: 85px;
   text-align: center;
-  -webkit-box-shadow: 0px 0 0 10px #fff;
   box-shadow: 0px 0 0 10px #fff;
 }
 
@@ -13686,7 +13625,7 @@ a.ygtvspacer:hover {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   display: inline-block;
@@ -13992,7 +13931,7 @@ textarea.box.message .message_form input[type="text"] {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
@@ -14895,7 +14834,6 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   line-height: 1.42857143;
   text-align: right;
   background-color: #ffffff;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -15034,7 +14972,7 @@ textarea {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   height: 200px;
@@ -15143,7 +15081,6 @@ textareatextarea {
   border-bottom: 1px solid #bbb;
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   background-image: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=0);
@@ -15156,7 +15093,6 @@ textareatextarea {
   border-radius: 10px;
   border: 1px solid #ccc;
   border-top: 0 none;
-  -webkit-box-shadow: -5px 5px 20px 0 #666;
   box-shadow: -5px 5px 20px 0 #666;
 }
 
@@ -15179,7 +15115,6 @@ textareatextarea {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 400px;
-  max-height: -webkit-calc(100vh - 15em);
   max-height: calc(100vh - 15em);
   width: 60%;
 }
@@ -15197,7 +15132,6 @@ textareatextarea {
 
 #chooseqtype .selected {
   background-color: #fff;
-  -webkit-box-shadow: 0px 0 10px 0 #ccc;
   box-shadow: 0px 0 10px 0 #ccc;
 }
 
@@ -15543,14 +15477,12 @@ a.que .correctness:focus {
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #3c763d;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .formulation select.correct:focus,
 .formulation input.correct:focus {
   border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 
@@ -15559,14 +15491,12 @@ a.que .correctness:focus {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #8a6d3b;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .formulation select.partiallycorrect:focus,
 .formulation input.partiallycorrect:focus {
   border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 }
 
@@ -15575,14 +15505,12 @@ a.que .correctness:focus {
   color: #a94442;
   background-color: #f2dede;
   border-color: #a94442;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .formulation select.incorrect:focus,
 .formulation input.incorrect:focus {
   border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 
@@ -16335,7 +16263,6 @@ body.path-question-type .mform fieldset.hidden {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -16578,7 +16505,7 @@ fieldset[disabled] .userprofile .messagebox a.active {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: 100%;
@@ -17306,7 +17233,7 @@ ol {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -17406,7 +17333,7 @@ textarea.block .singleselect select {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -17571,7 +17498,7 @@ textarea.searchform input[type="text"] {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -17740,7 +17667,7 @@ textarea.mform .fitem .felement input[type="password"] {
 }
 
 .mform fieldset.collapsed legend a.fheader {
-  background-image: url([[pix:t/collapsed_rtl]]);
+  background-image: url([[pix:t/collapsed]]);
 }
 
 .jsenabled .mform .collapsed .fcontainer {
@@ -17813,7 +17740,7 @@ textarea.mform .fitem .felement input[type="password"] {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -17915,7 +17842,7 @@ select.singleselect {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
@@ -18065,7 +17992,6 @@ textareaselect.singleselect {
   .form-item .form-setting > input[type="password"],
   .mform .fcontainer .fitem .felement > input[type="password"] {
     width: auto;
-    min-width: 480px;
     margin-bottom: 5px;
   }
 
@@ -18332,7 +18258,7 @@ select {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -18387,7 +18313,7 @@ textarea#page-mod-forum-discuss .discussioncontrols .discussioncontrol .singlese
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: auto;
@@ -19084,8 +19010,6 @@ table.flexible .emptyrow {
 .left_scroller .generaltable td,
 .right_scroller .generaltable td {
   line-height: 20px;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -19153,7 +19077,6 @@ input[type="reset"] {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -19595,7 +19518,6 @@ td.submit input .badge {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -20008,7 +19930,6 @@ input.fp-btn-choose {
   line-height: 1.42857143;
   text-align: right;
   background-color: #ffffff;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -20470,7 +20391,6 @@ body.has_dock div#dock {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   background-image: none;
   border: 1px solid transparent;
@@ -20918,7 +20838,6 @@ fieldset[disabled] #dock .dockedtitle.active {
   margin-bottom: 0;
   font-weight: normal;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -21006,41 +20925,8 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
   background: #ffffff none no-repeat top left;
 }
 
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .score {
-  text-align: left;
-  float: left;
-  margin-right: 28px;
-  margin-left: 0px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete {
-  float: right;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .level .delete input {
-  right: 0;
-  left: auto;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .addcriterion {
-  margin-left: 5px;
-  margin-right: 0px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .addcriterion input {
-  padding-left: 26px;
-  padding-right: 10px;
-  background-position: left 8px top 8px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .options .option .value {
-  margin-right: 0px;
-  margin-left: 5px;
-}
-
-.dir-rtl #rubric-rubric.gradingform_rubric .options .option input {
-  margin-right: 12px;
-  margin-left: 5px;
+.criteria .remark textarea {
+  height: auto;
 }
 
 .mform.gradingform_rubric_editform .fitem .felement .hiddenelement {
@@ -21119,7 +21005,6 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .scorevalue input {
   float: none;
   width: 3em;
-  display: inline;
 }
 
 #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .scorevalue input.hiddenelement,
@@ -21137,7 +21022,6 @@ fieldset[disabled] #page-grade-grading-manage .actions .action {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -21200,7 +21084,6 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric #rubric-criteria .criterion
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -21288,4 +21171,5 @@ fieldset[disabled] #rubric-rubric.gradingform_rubric .addcriterion {
 .path-grade-report-grader .grade_icons {
   display: inline;
 }
-/*# sourceMappingURL=/theme/bootstrap/style/moodle-rtl.css.map */
+
+/*# sourceMappingURL=/theme/bootstrap/style//theme/bootstrap/style/moodle.css */
